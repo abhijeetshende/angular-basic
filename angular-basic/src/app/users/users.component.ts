@@ -29,4 +29,6 @@ export class UsersComponent {
   sendDataFromHTMLtoTS(e:Event){
     this.htmltotsData = (e.target as HTMLInputElement).value;
   }
+
+  two_way_binding:string=""
 }

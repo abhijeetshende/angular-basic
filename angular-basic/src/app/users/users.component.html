@@ -31,4 +31,24 @@
   <small id="helpId" class="form-text text-muted"
     >Data coming from TS {{ htmltotsData }}</small
   >
+
+  <br />
+  <div class="border my-2 py-2  col-4">
+    <p>Two way Binding</p>
+    <div class="form-group">
+      <label for="two-way-binding"></label>
+      <input
+        type="text"
+        class="form-control"
+        name="two-way-binding"
+        id="two-way-binding"
+        [(ngModel)]="two_way_binding"
+        aria-describedby="helpId"
+        placeholder=""
+      />
+      <small id="helpId" class="form-text text-muted"
+        >Help text --- {{ two_way_binding }}</small
+      >
+    </div>
+  </div>
 </div>
