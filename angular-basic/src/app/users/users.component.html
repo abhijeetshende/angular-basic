@@ -1,18 +1,34 @@
 <p>users works!</p>
 <!-- for stringinterpolation {{}} -->
 
-<p>my name is {{name}}</p>
+<p>my name is {{ name }}</p>
 
-
-<p>my age is {{getage()}}  </p>
+<p>my age is {{ getage() }}</p>
 
 <!-- for property binding use [] -->
 <button class="btn btn-primary" [disabled]="allowNewUser">Hello</button>
 <span [classList]="'p-1 mx-1 bg-primary'">Hello property Binding</span>
 
-
 <!-- Event Binding example -->
-<p>Change Message using Event binding -----   {{eventBinded_string}}</p>
-<button class="bg bg-primary" (click)="changeStringUsingEvent()">Change String</button>
+<p>Change Message using Event binding ----- {{ eventBinded_string }}</p>
+<button class="bg bg-primary" (click)="changeStringUsingEvent()">
+  Change String
+</button>
 
+<!-- sending data from HTML to TS -->
 
+<div class="form-group">
+  <label for="">Sending Data</label>
+  <input
+    type="text"
+    class="form-control"
+    name="sending_data"
+    id=""
+    aria-describedby="helpId"
+    placeholder=""
+    (input)="sendDataFromHTMLtoTS($event)"
+  />
+  <small id="helpId" class="form-text text-muted"
+    >Data coming from TS {{ htmltotsData }}</small
+  >
+</div>

@@ -24,4 +24,9 @@ export class UsersComponent {
       this.eventBinded_string = 'string  has been changed';
     }, 1000);
   }
+
+  htmltotsData: string = '';
+  sendDataFromHTMLtoTS(e:Event){
+    this.htmltotsData = (e.target as HTMLInputElement).value;
+  }
 }
