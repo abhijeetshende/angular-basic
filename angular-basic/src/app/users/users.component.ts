@@ -26,9 +26,15 @@ export class UsersComponent {
   }
 
   htmltotsData: string = '';
-  sendDataFromHTMLtoTS(e:Event){
+  sendDataFromHTMLtoTS(e: Event) {
     this.htmltotsData = (e.target as HTMLInputElement).value;
   }
 
-  two_way_binding:string=""
+  two_way_binding: string = '';
+
+  //ngIf
+  ngIfbuttonClicked: boolean = false;
+  showNgIfDemo() {
+    this.ngIfbuttonClicked = true;
+  }
 }

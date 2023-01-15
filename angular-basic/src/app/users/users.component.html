@@ -33,7 +33,7 @@
   >
 
   <br />
-  <div class="border my-2 py-2  col-4">
+  <div class="border my-2 py-2 col-4">
     <p>Two way Binding</p>
     <div class="form-group">
       <label for="two-way-binding"></label>
@@ -50,5 +50,20 @@
         >Help text --- {{ two_way_binding }}</small
       >
     </div>
+  </div>
+
+  <hr />
+  NGiF
+  <div class="border col-4">
+    <button
+      type="button"
+      name=""
+      id=""
+      (click)="showNgIfDemo()"
+      class="btn btn-primary btn-lg btn-block"
+    >
+      NG IF
+    </button>
+    <span *ngIf="ngIfbuttonClicked"> Show Me </span>
   </div>
 </div>
