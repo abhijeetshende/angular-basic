@@ -37,4 +37,11 @@ export class UsersComponent {
   showNgIfDemo() {
     this.ngIfbuttonClicked = true;
   }
+
+  generateColor(){
+    let randNumber:any = Math.random() ;
+    let o = randNumber > 0.5 ? 'green':'red'
+    console.log(o,randNumber);
+    return o
+  }
 }
